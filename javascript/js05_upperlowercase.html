@@ -1,0 +1,40 @@
+!DOCTYPE html
+html
+head
+titlejs05_UpperLowerCase.htm - conversao de stringtitle
+meta http-equiv=Content-Type content=texthtml; charset=utf-8
+meta charset=utf-8
+head
+body
+
+	h3Formulario de Consulta de Cursoh3
+	p
+		form name=formcurso action= method=post
+			Digite seu Curso input type=text name=f_cursodig size=8 maxlength=4  (SIST)pp
+			input type=button name=btn_validar value=validar onclick=cadcurso() 
+			input type=reset name=btn_cancelar value=cancelar pp
+			Codigo do Curso input type=text name=f_codcurso size=15 maxlength=10 
+		form
+
+
+
+
+	script language = javascript
+
+		variaveis
+		var js_cursodig;
+
+		funcao cadcurso
+		function cadcurso(){
+			js_cursodig=document.formcurso.f_cursodig.value;
+			if(js_cursodig.toUpperCase() == 'SIST'){
+				document.formcurso.f_codcurso.value='SIST001FB';
+			}else{
+				window.alert('Curso Invalido!');
+			}
+
+		}
+	script 
+p
+body
+html

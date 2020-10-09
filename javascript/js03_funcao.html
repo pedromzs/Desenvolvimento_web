@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js03_funcao.htm - somatoria com entrada de dados por formulario</title>
+	<meta http-equiv="Content-Type" content="text/html; 
+	<h3>Somatória dos números inteiros</h3>charset=iso-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h3>Somatoria de numeros inteiros com conversao de dados</h3>
+<form name="Meuformulario" action=" " method="post">
+	Entre com o valor 1: <input type="text" name="f_n1"/><p></p>
+	Entre com o valor 2: <input type="text" name="f_n2"/><p></p>
+	<input type="button" name="btn_somar" value="somar" onclick="soma()"/>
+	<input type="reset" name="btn_apagar" value="Apagar"/>
+</form>
+
+<script language="javascript">
+	/*Variáveis*/
+
+	var js_n1;
+	var js_n2;
+	var js_soma;
+
+	/*funçao*/
+function soma(){
+	/*entrada de dados*/
+	js_n1 = parseInt(document.Meuformulario.f_n1.value);
+	js_n2 = parseInt(document.Meuformulario.f_n2.value);
+
+	/*processamento de dados*/
+	js_soma = js_n1 + js_n2;
+
+	/*saída de dados*/
+	window.alert('Resultado do somatorio = '+ js_soma.toString());
+}
+
+
+</script>
+
+
+</body>
+</html>
